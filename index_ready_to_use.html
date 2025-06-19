@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cashwise Web App</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 15px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button {
+    padding: 10px 15px;
+    margin: 5px 0;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  #account-cards > div {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    min-width: 150px;
+    background-color: #f7f7f7;
+  }
+  #chart-container {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  label, select, input {
+    margin: 5px 0;
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<h1>Cashwise Web App</h1>
+
+<label for="monthKey">Current Month (YYYY-MM):</label>
+<input type="month" id="monthKey" />
+
+<div id="home-menu" style="margin-top:20px;"></div>
+
+<hr />
+
+<div id="account-buttons" style="margin-top: 20px;"></div>
+<h2>Account Balances</h2>
+<div id="account-cards"></div>
+
+<div id="chart-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
